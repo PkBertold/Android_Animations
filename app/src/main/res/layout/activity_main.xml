@@ -10,47 +10,60 @@
         android:id="@+id/imgView"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:src="@drawable/logo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        />
+        android:src="@drawable/logo" />
 
     <LinearLayout
         android:id="@+id/linear1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_below="@+id/imgView"
-        android:weightSum="3"
         android:layout_marginTop="30dp"
-        >
-    <Button
-        android:id="@+id/btnBlink"
-        android:layout_height="wrap_content"
-        android:layout_width="0dp"
-        android:layout_margin="10dp"
-        android:padding="5dp"
-        android:text="Blink"
-        android:textColor="@color/white"
-        android:layout_weight="1"/>
-  <Button
-        android:id="@+id/btnRotate"
-        android:layout_height="wrap_content"
-        android:layout_width="0dp"
-        android:layout_margin="10dp"
-        android:padding="5dp"
-        android:text="Rotate"
-        android:textColor="@color/white"
-        android:layout_weight="1"/>
-  <Button
-        android:id="@+id/btnFade"
-        android:layout_height="wrap_content"
-        android:layout_width="0dp"
-        android:layout_margin="10dp"
-        android:padding="5dp"
-        android:text="Fade"
-        android:textColor="@color/white"
-        android:layout_weight="1"/>
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btnBlink"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:padding="5dp"
+            android:text="Blink"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnRotate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:baselineAligned="false"
+            android:padding="5dp"
+            android:text="Rotate"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnfIn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:padding="5dp"
+            android:text="Fade In" />
+
+        <Button
+            android:id="@+id/btnfOut"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:padding="5dp"
+            android:text="Fade Out" />
 
     </LinearLayout>
  <LinearLayout

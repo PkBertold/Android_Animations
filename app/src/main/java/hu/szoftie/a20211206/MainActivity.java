@@ -66,8 +66,24 @@ public class MainActivity extends AppCompatActivity {
                 kep.clearAnimation();
             }
         });
+        Button btnFadeIn = findViewById(R.id.btnfIn);
+        btnFadeIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Animation animFadeIn = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_in);
+                kep.startAnimation(animFadeIn);
+            }
+        });
+        Button btnFadeOut = findViewById(R.id.btnfOut);
+        btnFadeOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Animation animFadeOut = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_out);
+                kep.startAnimation(animFadeOut);
+            }
+        });
+}
 
-    }
 
     @Override
     protected void onStart() {
